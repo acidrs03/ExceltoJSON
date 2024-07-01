@@ -1,7 +1,6 @@
-from flask import Flask, request, redirect, url_for, render_template, send_file, jsonify
-import pandas as pd
+from flask import Flask, request, redirect, url_for, render_template, send_file, jsonify # type: ignore
+import pandas as pd # type: ignore
 import os
-import json
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
