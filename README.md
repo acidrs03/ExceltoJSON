@@ -41,11 +41,6 @@ This project is a web application built using FastAPI that allows users to uploa
     pip install -r requirements.txt
     ```
 
-4. **Create the `uploads` directory:**
-
-    ```bash
-    mkdir uploads
-    ```
 
 ## Running the Application
 
