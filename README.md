@@ -1,6 +1,6 @@
-# Excel to JSON Converter with Flask
+# Excel to JSON Converter with FastAPI
 
-This project is a web application built using Flask that allows users to upload an Excel file, convert it to JSON format, and download the JSON file. It also provides functionality to clear the uploaded files and generated JSON files with a notification.
+This project is a web application built using FastAPI that allows users to upload an Excel file, convert it to JSON format, and download the JSON file. It also provides functionality to clear the uploaded files and generated JSON files with a notification.
 
 ## Features
 
@@ -12,17 +12,20 @@ This project is a web application built using Flask that allows users to upload 
 ## Requirements
 
 - Python 3.6+
-- Flask
+- FastAPI
+- Uvicorn
 - Pandas
 - Openpyxl
+- Jinja2
+- python-multipart
 
 ## Installation
 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/acidrs03/ExceltoJSON.git
-    cd excel-to-json-flask
+    git clone https://github.com/yourusername/excel-to-json-fastapi.git
+    cd excel-to-json-fastapi
     ```
 
 2. **Create a virtual environment and activate it:**
@@ -46,29 +49,31 @@ This project is a web application built using Flask that allows users to upload 
 
 ## Running the Application
 
-1. **Run the Flask application:**
+1. **Run the FastAPI application:**
 
     ```bash
-    python app.py
+    python main.py
     ```
 
 2. **Open a web browser and go to:**
 
     ```
-    http://127.0.0.1:5000/ or http://localhost:5000/
+    http://localhost:5101/
     ```
 
 ## File Structure
 
-    excel-to-json-flask/
-    │
-    ├── app.py
-    ├── requirements.txt
-    ├── templates/
-    │ └── upload.html
-    ├── uploads/
-    │
-    └── README.md
+excel-to-json-fastapi/
+│
+├── main.py
+├── requirements.txt
+├── templates/
+│ └── upload.html
+├── static/
+│ └── main.js
+├── uploads/
+│
+└── README.md
 
 
 ## Usage
